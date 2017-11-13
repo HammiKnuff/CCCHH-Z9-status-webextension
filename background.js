@@ -1,7 +1,7 @@
 // SpaceAPI
-var doorURL = 'https://www.hackerspace.gr/spaceapi';
+var doorURL = 'https://hamburg.ccc.de/dooris/status.json';
 
-// This function checks spaceapi to see if hsgr is open
+// This function checks spaceapi to see if CCCHH is open
 function checker() {
     $.ajax({
          type: 'GET',
@@ -10,13 +10,13 @@ function checker() {
 
          success: function(data) {
              if (data.state.open) {
-                 chrome.browserAction.setTitle({title: 'HSGR is open with ' + (data.state.message).replace(/\D/g, '') + ' hackers'});
-                 chrome.browserAction.setIcon({path: 'icons/openhsgr-32.png'});
+                 chrome.browserAction.setTitle({title: 'Z9 is open with ' + (data.state.message).replace(/\D/g, '') + ' hackers'});
+                 chrome.browserAction.setIcon({path: 'icons/openz9-32.png'});
                  chrome.browserAction.setBadgeText({text: (data.state.message).replace(/\D/g, '')});
                  chrome.browserAction.setBadgeBackgroundColor({color: '#808080'});
              } else {
-                 chrome.browserAction.setTitle({title: 'HSGR is closed'});
-                 chrome.browserAction.setIcon({path: 'icons/hsgr-32.png'});
+                 chrome.browserAction.setTitle({title: 'Z9 is closed'});
+                 chrome.browserAction.setIcon({path: 'icons/z9-32.png'});
                  chrome.browserAction.setBadgeText({text: ''});
              }
          }
