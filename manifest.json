@@ -1,11 +1,30 @@
-{
-    "description": "Adds a browser icon that shows if hackerspace.gr is open, it displays a counter of people inside.",
-    "manifest_version": 2,
-    "name": "hsgr-status-checker",
-    "version": "0.1.6",
-    "homepage_url": "https://hackerspace.gr",
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <!-- properties -->
+  </Description>
+</RDF>
+
+<em:targetApplication>
+ <Description>
+	<em:name>CCCHH Satus</em:name>
+	<em:id>{F73CE9EE-C8D2-11E7-A12B-6A20CB11D2E8}</em:id>
+	<em:minVersion>50</em:minVersion>
+	<em:maxVersion>56.*</em:maxVersion>
+	 </Description>
+</em:targetApplication>
+
+<em:type>2</em:type>
+<em:version>1.0</em:version>
+<em:aboutURL>https://github.com/HammiKnuff/CCCHH-Z9-status-webextension</em:aboutURL>
+
+<em:description>Shows State of CCCHH</em:description>
+
+    "homepage_url": "https://www.hamburg.ccc.de/",
     "icons": {
-        "32": "icons/hsgr-32.png"
+        "32": "icons/z9-32.png"
     },
     "applications": {
         "gecko": {
